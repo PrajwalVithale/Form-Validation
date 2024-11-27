@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container"><br>
+        <h1 class="bungee-spice-regular" class="text-danger text-center">Form Validation using HTML,CSS and JS</h1><br>
+        <div class="col-lg-6-right">
+            <form action="#" onsubmit="return validation()" class="bg-light">
+                <div class="form-group">
+                    <label>Full Name: </label>
+                    <input type="text" name="name" class="form-control" id="Name" autocomplete="off">
+                    <span id="FullName" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="text" name="Email" class="form-control" id="email" autocomplete="off">
+                    <span id="Emailid" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number: </label>
+                    <input type="text" name="Mobile" class="form-control" id="MobileNumber" autocomplete="off">
+                    <span id="PhoneNumber" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label>Password: </label>
+                    <input type="text" name="pass" class="form-control" id="pass" autocomplete="off">
+                    <span id="Password" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password: </label>
+                    <input type="text" name="Confirmpass" class="form-control" id="Confirmpass" autocomplete="off">
+                    <span id="ConfirmPassword" class="text-danger font-weight-bold"></span>
+                </div>
+                <input style="margin-left: 500px;" type="submit" name="submit" value="submit" class="btn btn-success">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js">validation()</script>
+</body>
+</html>
